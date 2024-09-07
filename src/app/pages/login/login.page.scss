@@ -1,0 +1,24 @@
+ion-button[color="dark"] {
+  text-transform: initial;
+}
+
+ion-content {
+  --background: #4caf50; /* Green background */
+}
+
+.center-text {
+  text-align: center;
+  display: block;
+  margin-top: 10px; /* Add spacing if needed */
+}
+
+.title {
+  font-weight: bold;
+  font-size: 40px;
+  color: #1b5e20; /* Dark green title */
+}
+
+.register {
+  font-size: 15px;
+  color: #66bb6a; /* Light green text */
+}
