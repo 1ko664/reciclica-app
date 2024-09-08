@@ -79,7 +79,7 @@ describe('LoginPage', () => {
     });
   });
 
-  
+
 
   it('should not show loading when not recovering password', () => {
     spyOn(toastController, 'create').and.returnValue(<any> Promise.resolve({present: () => {}}));
@@ -144,7 +144,7 @@ describe('LoginPage', () => {
 
       store.dispatch(login({ email: 'valid@email.com', password: 'anyPassword' }));
       store.dispatch(loginFail({ error: {message:'err0r'}}));
-      
+
       store.select('loading').subscribe((loadingState) => {
         expect(loadingState.show).toBeFalsy();
       })

@@ -4,12 +4,16 @@ import {loginReducer} from "src/store/login/login.reducers";
 import { AppState } from 'src/store/AppState';
 import { EffectsModule } from "@ngrx/effects";
 import { LoginEffects } from "src/app/pages/login/login.effects";
+import { registerReducer } from "./register/register.reducer";
+import { RegisterEffects } from "./register/register.effect";
 
 export const AppStoreModule = [
     StoreModule.forRoot([]),
     StoreModule.forFeature("loading", loadingReducer),
     StoreModule.forFeature("login", loginReducer),
+    StoreModule.forFeature("register", registerReducer),
     EffectsModule.forRoot([
-        LoginEffects
+        LoginEffects,
+        RegisterEffects
     ])
 ]

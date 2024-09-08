@@ -26,3 +26,5 @@ export class AuthGuard implements CanLoad {
     )
   }
 }
+
+// Pembuatan AuthGuard
